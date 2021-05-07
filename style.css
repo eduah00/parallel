@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#d6d6cf;
+}
+
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color:#6b705c;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0%;    
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.container {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #12140a;
+    
+
+}
+
+.text {
+    background:url(/imgs/clouds-gif.gif);
+    background-size: 850px 250px;
+    font-size: 200px;
+    font-family: 'Exo 2', sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+
+
+header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 90px;
+    align-items: center;
+    justify-content: space-around;
+    background: #6b705c; 
+    border-color: black;
+}
+
+.logo {
+    height: 100%;
+    
+}
+
+.nav {
+    display: flex;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#rudr_instafeed{
+    list-style:none  
+  }
+#rudr_instafeed li{
+    float:left;
+    width:200px;
+    height:200px;
+    margin:10px
+  }
+#rudr_instafeed li img{
+    max-width:100%;
+    max-height:100%;
+  }
