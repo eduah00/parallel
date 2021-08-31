@@ -1,7 +1,6 @@
 {
   "name": "parallel",
   "version": "1.0.0",
-  "description": "",
   "main": "parallax.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +9,11 @@
   "license": "ISC",
   "dependencies": {
     "@dogstudio/highway": "^2.2.2",
-    "gsap": "^3.6.1"
-  }
+    "gsap": "^3.6.1",
+    "overlayscrollbars": "^1.13.1",
+    "smooth-scrollbar": "^8.6.3"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }
