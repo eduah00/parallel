@@ -43,10 +43,34 @@ body {
     font-size: 200px;
     font-family: 'Exo 2', sans-serif;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text;  */
     
 }
 
+c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100vh;
+    transform-origin: center right;
+    transition: transform .3s,opacity .3s;
+    opacity: 0;
+    z-index: 99;
+}
+
+.c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 6px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
 
 header {
     display: flex;
@@ -76,16 +100,38 @@ header {
 
 }
 
-#rudr_instafeed{
-    list-style:none  
-  }
-#rudr_instafeed li{
-    float:left;
-    width:200px;
-    height:200px;
-    margin:10px
-  }
-#rudr_instafeed li img{
-    max-width:100%;
-    max-height:100%;
-  }
+#instafeed {
+    max-width:1080px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    
+}
+    
+#instafeed a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    width: 100%;
+    padding-top: 2%;
+   
+    
+    
+    /* @media only screen and (min-width: $lg) {
+    width: 25%;
+      } */
+
+    
+} 
+      
+#instafeed img {
+    display: flex;
+    align-items: center;
+      
+}
+    
+
